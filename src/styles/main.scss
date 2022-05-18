@@ -5,11 +5,28 @@
 @import "fonts";
 @import "global";
 @import "extends";
+@import "common-styles";
+@import "modals";
+
+/* Секции */
+@import "./sections/index-page/intro";
+@import "./sections/index-page/advantages";
+@import "./sections/index-page/features";
+@import "./sections/index-page/feedback";
+@import "./sections/index-page/chars";
+@import "./sections/index-page/interior";
+
+//@import "./sections/index-page/questions";
+
+@import "./sections/index-page/chars";
+@import "./sections/index-page/interior";
 
 /* Компоненты */
-@import "./components/modal";
-/* Секции */
+@import "./components/main-header";
+@import "./components/accordeon-common-styles";
+@import "./components/chars-accordeon";
+@import "./components/char-card";
+@import "./components/form";
+@import "./components/developer";
 
-/* Модальные окна */
-
-
+@import "./components/main-footer";

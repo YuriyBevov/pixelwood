@@ -1,0 +1,52 @@
+include ../../mixins/char-card
+
+-
+  const charsList = [
+    { name: 'Стоимость:', value: '3 500 000 ₽' },
+    { name: 'Общая площадь', value: '35 м2' },
+    { name: 'Жилая площадь', value: '35 м2' },
+    { name: 'Любой пункт', value: 'Любое значение' },
+  ]
+
+section.chars
+  .container
+    .chars__wrapper.sticky-container
+      picture.chars__img
+        source(scrset="./assets/img/layout@1x.webp 1x, ./assets/img/layout@2x.webp 2x" type="image/webp")
+        img(src="./assets/img/layout@1x.png" srcset="./assets/img/layout@1x.png 1x, ./assets/img/layout@2x.png 2x" alt="Планировка" width="880" height="636")
+
+      .chars__content
+        h2.lw-text-xxl Модульный дом BIT26
+
+        ul.chars__list
+          each item in charsList
+            li.chars__item
+              span.lw-text-sm= item.name
+              span.lw-text-sm= item.value
+
+        a(href="#" data-modal-anchor="callback-modal").chars__offer-btn Заказать звонок
+
+        .chars__accordeon
+          h3.chars__accordeon-title.lw-text-xl Используемые материалы или комплектация дома
+
+          include ../../components/chars-accordeon
+
+        +char-card({
+          title: 'Если вы точно знаете, как должен выглядеть ваш дом, мы знаем, как его построить!',
+          cost: '3 500 000',
+          buttonText: 'Расчитать стоимость'
+        })
+
+        +char-card({
+          title: 'Заголовок, про расширение терассы',
+          cost: '3 500 000',
+          buttonText: 'Подробнее'
+        })
+
+        +char-card({
+          title: 'Заголовок, про канализацию, воду и прочее',
+          cost: '3 500 000',
+          buttonText: 'Подробнее'
+        })
+
+

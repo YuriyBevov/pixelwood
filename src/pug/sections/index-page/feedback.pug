@@ -1,0 +1,12 @@
+include ../../mixins/form
+
+section.feedback
+  .container
+    h2.lw-text-xxl Остались вопросы?
+    span.lw-text-md Заказать звонок
+
+    +form({
+      nameFieldID: 'feedback_form_user_name',
+      phoneFieldID: 'feedback_form_user_phone',
+      acceptFieldID: 'feedback_form_user_accept',
+    })

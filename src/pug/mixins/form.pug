@@ -1,0 +1,12 @@
+mixin form(options)
+  form(action="#").form
+    .form__content
+      fieldset.form__data
+        input(type="text" placeholder="Как к вам обращаться" id= options.nameFieldID)
+        input(type="text" placeholder="Номер телефона" id= options.phoneFieldID)
+
+      fieldset.form__accept
+        input(type="checkbox" id= options.acceptFieldID)
+        label(for= options.acceptFieldID)  Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>
+
+    a(href="#").form__btn Заказать

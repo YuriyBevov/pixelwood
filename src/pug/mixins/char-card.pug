@@ -1,0 +1,7 @@
+mixin char-card(data)
+  .char-card
+    .char-card__content
+      h3.lw-text-md= data.title
+      p.lw-text-sm.lw-fw-light= `Стоимость от: ${data.cost} ₽`
+
+    a(href="#").char-card__btn= data.buttonText

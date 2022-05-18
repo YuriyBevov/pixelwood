@@ -1,0 +1,68 @@
+section {
+  @extend .section-mb;
+}
+
+.sticky-container {
+  position: relative;
+}
+
+.lw {
+  &-text-xxl {
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 12px;
+
+    @include m-b-tablet-down {
+      font-size: 24px;
+    }
+  }
+
+  &-text-xl {
+    font-size: 32px;
+    font-weight: 400;
+
+    @include m-b-tablet-down {
+      font-size: 24px;
+    }
+  }
+
+  &-text-lg {
+    font-size: 24px;
+    font-weight: 400;
+
+    @include m-b-tablet-down {
+      font-size: 16px;
+    }
+  }
+
+  &-text-md {
+    font-size: 20px;
+    font-weight: 400;
+
+    @include m-b-tablet-down {
+      font-size: 16px;
+    }
+  }
+
+  &-text-sm {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &-text-xs {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  &-fw-normal {
+    font-weight: 400;
+  }
+
+  &-fw-light {
+    font-weight: 300;
+  }
+
+  &-fw-bold {
+    font-weight: 700;
+  }
+}

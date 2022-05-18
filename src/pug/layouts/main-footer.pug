@@ -1,2 +1,28 @@
-footer
-  p footer
+include ../mixins/form
+
+footer.main-footer
+  section.feedback
+    .container
+      h2.lw-text-xxl Остались вопросы?
+      span.lw-text-md Заказать звонок
+
+      +form({
+        nameFieldID: 'footer_feedback_form_user_name',
+        phoneFieldID: 'footer_feedback_form_user_phone',
+        acceptFieldID: 'footer_feedback_form_user_accept',
+      })
+  .container
+    .main-footer__bottom
+      .main-footer__about
+        a(href="index.html").main-footer__logo
+          img(src="./assets/img/footer-logo.svg" alt="PixelWood" width="120" height="51")
+
+        span © ИП Наименование
+        span 2021 <a href="#">Политика конфиденциальности</a>
+      .main-footer__contacts
+        a(href="tel:89537484772").main-footer__link.main-footer__link--phone 8 (953) 748 47 72
+        a(href="mailto:pochta@gmail.com").main-footer__link.main-footer__link--mail Pochta@gmail.com
+
+
+    include ../components/developer
+

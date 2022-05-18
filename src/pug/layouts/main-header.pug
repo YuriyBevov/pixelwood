@@ -1,2 +1,11 @@
-header
-  p header
+header.main-header
+  .container
+    .main-header__wrapper
+      a(href="index.html").main-header__link.main-header__link--logo
+        img(src="./assets/img/main-logo.svg" alt="PixelWood" width="120" height="51")
+
+      a(href="#").main-header__link.main-header__link--social
+        svg(width="55" height="55")
+          use(xlink:href="./assets/svg-sprite.svg#icon-tg")
+      a(href="#" data-modal-anchor="callback-modal").main-header__btn Заказать звонок
+      a(href="telto:89537484772").main-header__link.main-header__link--phone 8 (953) 748 47 72

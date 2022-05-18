@@ -1,0 +1,27 @@
+-
+  const advantages = [
+    { icon: 'num1', iconWidth: '28', iconTabletWidth: '25', alt: '1', text: 'Высокоточная сборка' },
+    { icon: 'num2', iconWidth: '43', iconTabletWidth: '39', alt: '2', text: 'Прочные и долговечные материал'},
+    { icon: 'num3', iconWidth: '43', iconTabletWidth: '39', alt: '3', text: 'Всесезонность' },
+    { icon: 'num4', iconWidth: '43', iconTabletWidth: '39', alt: '4', text: 'Энергоэффективность' },
+    { icon: 'num5', iconWidth: '43', iconTabletWidth: '39', alt: '5', text: 'Лаконичный и эргономичный дизайн интерьера' },
+    { icon: 'num6', iconWidth: '43', iconTabletWidth: '39', alt: '6', text: 'Короткий цикл производства' },
+  ]
+
+section.advantages
+  .container
+    h2.lw-text-xxl Модульный дом BIT26
+
+    p.lw-text-md.lw-fw-light.advantages__desc
+      | Это небольшой, современный и удобный дом для круглогодичного
+      | проживания семьи, которая ценит эргономичность и
+      | комфорт жизни и отдыха. Максимальная вместимость модульного дома BIT26 — двое взрослых + двое детей.
+
+    ul.advantages__list
+      each adv in advantages
+        li.advantages__item
+          picture
+            source(srcset=`./assets/img/${adv.icon}-tablet.png` media="(max-width: 1024px)" width=adv.iconTabletWidth height="64")
+            img(src=`./assets/img/${adv.icon}.png` alt=adv.alt width=adv.iconWidth height="71")
+          p.advantages__text= adv.text
+

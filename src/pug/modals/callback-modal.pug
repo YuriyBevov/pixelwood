@@ -1,0 +1,17 @@
+include ../mixins/form
+
+.modal-overlay
+  .modal#callback-modal
+    button(type="button").modal__close.callback-modal__close
+      svg(width="24" height="24")
+        use(xlink:href="./assets/svg-sprite.svg#icon-plus")
+    .modal__content
+      .feedback
+        .container
+          h2.lw-text-xxl Заказать звонок
+
+          +form({
+            nameFieldID: 'callback_modal_form_user_name',
+            phoneFieldID: 'callback_modal_form_user_phone',
+            acceptFieldID: 'callback_modal_form_user_accept',
+          })

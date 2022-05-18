@@ -1,0 +1,40 @@
+#chars-accordeon {
+  .accordeon-field {
+    border-bottom: 1px solid var(--main-border-color);
+  }
+
+  .accordeon-head {
+    padding: 12px 0;
+  }
+
+  .accordeon-body {
+    padding-top: 18px;
+    padding-bottom: 12px;
+    opacity: 0.4;
+
+    p {
+       margin-bottom: 5px;
+       max-width: 75%;
+    }
+
+    img {
+      margin-top: 10px;
+    }
+
+    &.js-opened {
+      animation: fadeIn 0.3s ease-in forwards;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+

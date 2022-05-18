@@ -1,0 +1,34 @@
+.accordeon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &-head {
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        svg {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%) rotate(0);
+            transition: transform 0.3s linear;
+        }
+
+        &.js-active {
+            svg {
+                transform: translateY(-50%) rotate(45deg);
+            }
+        }
+    }
+
+    &-body {
+        display: none;
+
+        &.js-opened {
+            display: block;
+        }
+    }
+}

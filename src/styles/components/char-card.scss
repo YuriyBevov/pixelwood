@@ -1,0 +1,50 @@
+.char-card {
+  @extend .flex-wrap;
+  align-items: center;
+  background-image: url('../assets/img/char-card-bg@1x.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  min-height: 175px;
+  padding: 15px;
+  margin-bottom: 24px;
+
+  @include m-b-desktop-down {
+    min-height: 240px;
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  &__content {
+    width: 50%;
+    max-width: 275px;
+    color: var(--white-color);
+    margin-right: auto;
+    padding-right: 15px;
+
+    h3 {
+      margin-bottom: 12px;
+    }
+
+    @include m-b-desktop-down {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__btn {
+    @extend .main-btn;
+    width: 50%;
+    max-width: 230px;
+    background-color: transparent;
+    border-color: var(--white-color);
+
+    @include m-b-desktop-down {
+      margin-top: auto;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

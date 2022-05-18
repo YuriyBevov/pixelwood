@@ -46,5 +46,9 @@
     "webpack": "^5.71.0",
     "webpack-stream": "^7.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gsap": "^3.10.4",
+    "imask": "^6.4.2",
+    "swiper": "^8.1.5"
+  }
 }

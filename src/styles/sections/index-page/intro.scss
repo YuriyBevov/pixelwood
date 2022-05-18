@@ -1,0 +1,43 @@
+.intro {
+  &__content {
+    padding-top: 80px;
+    margin-bottom: 137px;
+
+    @include m-b-desktop-lg-down {
+      padding-top: 50px;
+      margin-bottom: 64px;
+    }
+
+    @include m-b-tablet-down {
+      padding-top: 8px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    max-width: 5000px;
+    height: 100%;
+    min-height: 542px;
+    max-height: 1250px;
+
+    @include m-b-desktop-lg-down {
+      max-height: 542px;
+      min-height: 386px;
+    }
+
+    @include m-b-laptop-down {
+      max-height: 386px;
+      min-height: 306px;
+    }
+
+    @include m-b-tablet-down {
+      min-height: 220px;
+    }
+
+    @include m-b-mobile-small-down {
+      min-height: 130px;
+    }
+  }
+}

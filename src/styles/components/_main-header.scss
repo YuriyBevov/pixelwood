@@ -1,0 +1,78 @@
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--white-color);
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 32px 0;
+
+    @include m-b-laptop-down {
+      padding: 16px 0;
+    }
+  }
+
+  &__link {
+    @extend .flex-centered-content;
+    @extend .hover-opacity;
+    margin-right: 8px;
+
+    &--logo {
+      margin-right: auto;
+    }
+
+    &--social {
+      svg {
+        fill: var(--gray-color);
+      }
+    }
+
+    &--phone {
+      color: var(--gray-color);
+      font-size: 20px;
+      font-weight: 700;
+      margin-right: 0;
+
+      @include m-b-down('600px') {
+        font-size: 16px;
+      }
+    }
+
+    @include m-b-down('600px') {
+      &--logo {
+        width: 70px;
+        height: 30px;
+      }
+
+      &--phone {
+        margin-right: 8px;
+      }
+
+      &--social {
+        order: 2;
+        margin-right: 0;
+
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    @extend .main-btn;
+    min-width: 190px;
+    margin-right: 8px;
+
+    @include m-b-down('600px') {
+      margin-right: 0;
+      margin-top: 12px;
+      order: 3;
+      max-width: 100%;
+    }
+  }
+}

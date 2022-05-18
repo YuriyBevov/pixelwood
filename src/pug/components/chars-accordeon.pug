@@ -1,0 +1,26 @@
+-
+  const accordeonData = [
+    { title: 'Отделка', bodyText: ['Гидро-ветрозащитная мембрана.', 'Рулонная полимербитумная изоляция с базальтовой крошкой'], bodyImg: 'accordeon-mock-img', isActive: true },
+    { title: 'Утеплитель', bodyText: ['Гидро-ветрозащитная мембрана.', 'Рулонная полимербитумная изоляция с базальтовой крошкой'], bodyImg: 'accordeon-mock-img' },
+    { title: 'Кровля', bodyText: ['Гидро-ветрозащитная мембрана.', 'Рулонная полимербитумная изоляция с базальтовой крошкой'], bodyImg: 'accordeon-mock-img' },
+    { title: 'Электрика:', bodyText: ['Гидро-ветрозащитная мембрана.', 'Рулонная полимербитумная изоляция с базальтовой крошкой'], bodyImg: 'accordeon-mock-img' },
+    { title: 'Сан.узел', bodyText: ['Гидро-ветрозащитная мембрана.', 'Рулонная полимербитумная изоляция с базальтовой крошкой'], bodyImg: 'accordeon-mock-img' },
+    { title: 'Отопление и вентиляция', bodyText: ['Гидро-ветрозащитная мембрана.', 'Рулонная полимербитумная изоляция с базальтовой крошкой'], bodyImg: 'accordeon-mock-img' },
+    { title: 'Внешняя отделка', bodyText: ['Гидро-ветрозащитная мембрана.', 'Рулонная полимербитумная изоляция с базальтовой крошкой'], bodyImg: 'accordeon-mock-img' },
+    { title: 'Терраса', bodyText: ['Гидро-ветрозащитная мембрана.', 'Рулонная полимербитумная изоляция с базальтовой крошкой'], bodyImg: 'accordeon-mock-img' },
+    { title: 'Фундамент', bodyText: ['Гидро-ветрозащитная мембрана.', 'Рулонная полимербитумная изоляция с базальтовой крошкой'], bodyImg: 'accordeon-mock-img' },
+
+  ]
+
+.accordeon#chars-accordeon
+  each field in accordeonData
+    .accordeon-field
+      .accordeon-head(class= field.isActive ? 'js-active' : null)
+        span.lw-text-lg= field.title
+        svg(width="16" height="16")
+          use(xlink:href="./assets/svg-sprite.svg#icon-plus")
+
+      .accordeon-body(class= field.isActive ? 'js-opened' : null)
+        each text in field.bodyText
+          p.lw-text-sm.lw-fw-light= text
+        img(src=`./assets/img/${field.bodyImg}@1x.png` alt= field.title width="561" height="92")

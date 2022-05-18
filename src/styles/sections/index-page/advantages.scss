@@ -1,0 +1,52 @@
+.advantages {
+  @extend .section-padding;
+
+  &__desc {
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    @extend .flex-wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    min-width: 350px;
+    margin: 20px 0;
+    padding-right: 20px;
+
+    img {
+      max-width: initial;
+      margin-right: 12px;
+      max-height: 71px;
+      object-fit: contain;
+
+      @include m-b-desktop-down {
+        max-height: 64px;
+      }
+    }
+
+    @include m-b-desktop-down {
+      width: calc(100% / 3);
+    }
+
+    @include m-b-down('1100px') {
+      width: 50%;
+    }
+
+    @include m-b-tablet-down {
+      width: 100%;
+      min-width: initial;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+
+    @include m-b-laptop-down {
+      font-size: 18px;
+    }
+  }
+}

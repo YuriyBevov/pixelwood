@@ -1,1 +1,3 @@
-//import './modules/module.js';
+import './modules/accordeon.js';
+import './modules/modal.js';
+
