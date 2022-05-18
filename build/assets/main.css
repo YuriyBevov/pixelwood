@@ -1153,7 +1153,7 @@ button.swiper-pagination-bullet {
   --main-border-color: rgba(62, 62, 62, 0.5);
   --main-scrollbar-width: 6px;
   --main-scrollbar-color: var(--light-color);
-  --main-scrollbar-thumb-color: var(--accent-color);
+  --main-scrollbar-thumb-color: var(--gray-color);
   --main-transition: 0.2s ease-in;
 }
 
