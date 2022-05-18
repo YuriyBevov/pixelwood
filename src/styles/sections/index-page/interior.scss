@@ -1,3 +1,44 @@
 .interior {
+  @extend .section-padding;
+  margin-bottom: 60px;
 
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  &-swiper {
+    min-height: 200px;
+    max-height: 750px;
+    padding-bottom: 50px;
+
+    .swiper-slide {
+      picture,img {
+        display: block;
+        height: auto;
+        width: 100%;
+        min-height: 150px;
+        max-height: 700px;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: initial;
+      bottom: 0;
+      height: 40px;
+      width: 40px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .swiper-button-next {
+      right: calc(50% - 70px);
+    }
+
+    .swiper-button-prev {
+      left: calc(50% - 70px);
+    }
+  }
 }

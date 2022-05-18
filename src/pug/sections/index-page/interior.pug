@@ -1,3 +1,27 @@
+-
+  const slides = [
+    {img: 'interior-slide-1'},
+    {img: 'interior-slide-1'},
+    {img: 'interior-slide-1'},
+  ]
 section.interior
   .container
     h2.lw-text-xxl Интерьер
+
+    .swiper.interior-swiper
+      .swiper-wrapper
+        each slide in slides
+          .swiper-slide
+            picture
+              // 1920/700
+              source(srcset=`./assets/img/${slide.img}@1x.webp 1x, ./assets/img/${slide.img}@2x.webp 2x`)
+              img(src=`./assets/img/${slide.img}@1x.jpg` srcset=`./assets/img/${slide.img}@1x.jpg 1x, ./assets/img/${slide.img}@2x.jpg 2x` alt="Фото интерьера")
+
+      .swiper-pagination
+
+      .swiper-button-prev
+        svg(width="47" height="15")
+          use(xlink:href="./assets/svg-sprite.svg#icon-arrow-left")
+      .swiper-button-next
+        svg(width="47" height="15")
+          use(xlink:href="./assets/svg-sprite.svg#icon-arrow-right")
