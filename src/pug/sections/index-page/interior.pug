@@ -1,19 +1,33 @@
 -
   const slides = [
     {img: 'interior-slide-1'},
-    {img: 'interior-slide-1'},
-    {img: 'interior-slide-1'},
+    {img: 'interior-slide-2'},
+    {img: 'interior-slide-3'},
+    {img: 'interior-slide-4'},
+    {img: 'interior-slide-5'},
+    {img: 'interior-slide-6'},
+    {img: 'interior-slide-7'},
+    {img: 'interior-slide-8'},
+    {img: 'interior-slide-9'},
+    {img: 'interior-slide-10'},
+    {img: 'interior-slide-11'},
+    {img: 'interior-slide-12'},
+    {img: 'interior-slide-13'},
+    {img: 'interior-slide-14'},
+    {img: 'interior-slide-15'},
+    {img: 'interior-slide-16'},
+    {img: 'interior-slide-17'},
   ]
 section.interior
   .container
-    h2.lw-text-xxl Интерьер
+    h2.lw-text-xxl.lw-text-center Интерьер
 
     .swiper.interior-swiper
       .swiper-wrapper
         each slide in slides
           .swiper-slide
             picture
-              // 1920/700
+              // 1720/700
               source(srcset=`./assets/img/${slide.img}@1x.webp 1x, ./assets/img/${slide.img}@2x.webp 2x`)
               img(src=`./assets/img/${slide.img}@1x.jpg` srcset=`./assets/img/${slide.img}@1x.jpg 1x, ./assets/img/${slide.img}@2x.jpg 2x` alt="Фото интерьера")
 

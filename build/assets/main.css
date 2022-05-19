@@ -1519,6 +1519,9 @@ button {
   font-size: 13px;
   font-weight: 400;
 }
+.lw-text-center {
+  text-align: center;
+}
 .lw-fw-normal {
   font-weight: 400;
 }
