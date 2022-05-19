@@ -65,7 +65,7 @@
 
   &__btn {
     @extend .main-btn;
-    @extend .border-width-hover;
+    @extend .background-white-hover;
     min-width: 169px;
     border-color: var(--white-color);
     background-color: transparent;

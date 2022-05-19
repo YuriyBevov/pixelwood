@@ -1450,14 +1450,13 @@ fieldset {
   background-color: var(--hover-black);
 }
 
-.border-width-hover, .form__btn, .char-card__btn {
-  -webkit-transition: border var(--main-transition), background-color 0.3s 0.1s ease-in, color var(--main-transition);
-  -o-transition: border var(--main-transition), background-color 0.3s 0.1s ease-in, color var(--main-transition);
-  transition: border var(--main-transition), background-color 0.3s 0.1s ease-in, color var(--main-transition);
+.background-white-hover, .form__btn, .char-card__btn {
+  -webkit-transition: background-color var(--main-transition), color var(--main-transition);
+  -o-transition: background-color var(--main-transition), color var(--main-transition);
+  transition: background-color var(--main-transition), color var(--main-transition);
 }
-.border-width-hover:hover, .form__btn:hover, .char-card__btn:hover, .border-width-hover:focus, .form__btn:focus, .char-card__btn:focus {
+.background-white-hover:hover, .form__btn:hover, .char-card__btn:hover, .background-white-hover:focus, .form__btn:focus, .char-card__btn:focus {
   opacity: 1;
-  border: transparent;
   color: var(--gray-color);
   background-color: var(--white-color);
 }
