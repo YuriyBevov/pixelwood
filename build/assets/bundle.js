@@ -440,6 +440,11 @@ var Modal = /*#__PURE__*/function () {
 
       _this.openers.forEach(function (opener) {
         opener.addEventListener('click', _this.openModal);
+      }); //если в модалке есть форма, при закрытии обнуляю поля
+
+
+      _this.modal.querySelectorAll('form').forEach(function (f) {
+        return f.reset();
       });
     });
 

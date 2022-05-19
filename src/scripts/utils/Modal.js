@@ -89,6 +89,9 @@ export class Modal {
       this.openers.forEach(opener => {
           opener.addEventListener('click', this.openModal);
       })
+
+      //если в модалке есть форма, при закрытии обнуляю поля
+      this.modal.querySelectorAll('form').forEach(f=>f.reset());
   }
 
   closeByOverlayClick = (evt) => {
