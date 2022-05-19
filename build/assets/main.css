@@ -1156,7 +1156,7 @@ button.swiper-pagination-bullet {
   --main-scrollbar-width: 6px;
   --main-scrollbar-color: var(--light-color);
   --main-scrollbar-thumb-color: var(--gray-color);
-  --main-transition: 0.2s ease-in;
+  --main-transition: 0.3s 0.1s ease-in;
 }
 
 /* stylelint-disable */
@@ -1451,13 +1451,15 @@ fieldset {
 }
 
 .border-width-hover, .form__btn, .char-card__btn {
-  -webkit-transition: all var(--main-transition);
-  -o-transition: all var(--main-transition);
-  transition: all var(--main-transition);
+  -webkit-transition: border var(--main-transition), background-color 0.3s 0.1s ease-in, color var(--main-transition);
+  -o-transition: border var(--main-transition), background-color 0.3s 0.1s ease-in, color var(--main-transition);
+  transition: border var(--main-transition), background-color 0.3s 0.1s ease-in, color var(--main-transition);
 }
 .border-width-hover:hover, .form__btn:hover, .char-card__btn:hover, .border-width-hover:focus, .form__btn:focus, .char-card__btn:focus {
   opacity: 1;
-  border-width: 3px;
+  border: transparent;
+  color: var(--gray-color);
+  background-color: var(--white-color);
 }
 
 /*
