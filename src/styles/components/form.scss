@@ -34,10 +34,21 @@
       max-width: 270px;
       color: var(--white-color);
       background-color: transparent;
+      transition: border-color var(--main-transition);
 
       &::placeholder {
         font-size: 14px;
         color: var(--white-color);
+        background-color: transparent;
+        transition: color var(--main-transition);
+      }
+
+      &.js-invalid-control {
+        border-color: var(--danger-color);
+
+        &::placeholder {
+          color: var(--danger-color);
+        }
       }
 
       @include m-b-down(960px) {
@@ -60,6 +71,45 @@
 
     @include m-b-down(960px) {
       margin-bottom: 20px;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    label.checkbox-label {
+      position: relative;
+      cursor: pointer;
+      padding-left: 24px;
+      font-size: 14px;
+
+      &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          content: '';
+
+          width: 16px;
+          height: 16px;
+
+          border: 1px solid var(--white-color);
+          border-radius: 0;
+          background-color: transparent;
+
+          transition: border-color var(--main-transition);
+      }
+    }
+
+    input[type="checkbox"]:checked + label.checkbox-label::before {
+        background-image: url('../assets/img/checkbox-icon.svg');
+        background-size: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    input[type="checkbox"].js-invalid-control + label.checkbox-label::before {
+      border-color: var(--danger-color);
     }
   }
 

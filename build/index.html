@@ -150,7 +150,7 @@
       <section class="feedback">
         <div class="container">
           <h2 class="lw-text-xxl">Остались вопросы?</h2><span class="lw-text-md">Заказать звонок</span>
-                <form class="form" action="#">
+                <form class="form" action="mail.php" method="POST">
                   <div class="form__content">
                     <fieldset class="form__data">
                       <input type="text" placeholder="Как к вам обращаться" id="feedback_form_user_name">
@@ -158,9 +158,10 @@
                     </fieldset>
                     <fieldset class="form__accept">
                       <input type="checkbox" id="feedback_form_user_accept">
-                      <label for="feedback_form_user_accept"> Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></label>
+                      <label class="checkbox-label" for="feedback_form_user_accept"> Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой&nbsp;конфиденциальности</a></label>
                     </fieldset>
-                  </div><a class="form__btn" href="#">Заказать</a>
+                  </div>
+                  <button class="form__btn" type="submit">Заказать</button>
                 </form>
         </div>
       </section>
@@ -292,13 +293,13 @@
                       <div class="char-card__content">
                         <h3 class="lw-text-md">Заголовок, про расширение терассы</h3>
                         <p class="lw-text-sm lw-fw-light">Стоимость от: 3 500 000 ₽</p>
-                      </div><a class="char-card__btn" href="#">Подробнее</a>
+                      </div><a class="char-card__btn" href="#" data-modal-anchor="article-modal">Подробнее</a>
                     </div>
                     <div class="char-card">
                       <div class="char-card__content">
                         <h3 class="lw-text-md">Заголовок, про канализацию, воду и прочее</h3>
                         <p class="lw-text-sm lw-fw-light">Стоимость от: 3 500 000 ₽</p>
-                      </div><a class="char-card__btn" href="#">Подробнее</a>
+                      </div><a class="char-card__btn" href="#" data-modal-anchor="article-modal">Подробнее</a>
                     </div>
             </div>
           </div>
@@ -347,7 +348,7 @@
       <section class="feedback">
         <div class="container">
           <h2 class="lw-text-xxl">Остались вопросы?</h2><span class="lw-text-md">Заказать звонок</span>
-              <form class="form" action="#">
+              <form class="form" action="mail.php" method="POST">
                 <div class="form__content">
                   <fieldset class="form__data">
                     <input type="text" placeholder="Как к вам обращаться" id="footer_feedback_form_user_name">
@@ -355,9 +356,10 @@
                   </fieldset>
                   <fieldset class="form__accept">
                     <input type="checkbox" id="footer_feedback_form_user_accept">
-                    <label for="footer_feedback_form_user_accept"> Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></label>
+                    <label class="checkbox-label" for="footer_feedback_form_user_accept"> Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой&nbsp;конфиденциальности</a></label>
                   </fieldset>
-                </div><a class="form__btn" href="#">Заказать</a>
+                </div>
+                <button class="form__btn" type="submit">Заказать</button>
               </form>
         </div>
       </section>
@@ -380,7 +382,7 @@
           <div class="feedback">
             <div class="container">
               <h2 class="lw-text-xxl">Заказать звонок</h2>
-                  <form class="form" action="#">
+                  <form class="form" action="mail.php" method="POST">
                     <div class="form__content">
                       <fieldset class="form__data">
                         <input type="text" placeholder="Как к вам обращаться" id="callback_modal_form_user_name">
@@ -388,11 +390,73 @@
                       </fieldset>
                       <fieldset class="form__accept">
                         <input type="checkbox" id="callback_modal_form_user_accept">
-                        <label for="callback_modal_form_user_accept"> Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></label>
+                        <label class="checkbox-label" for="callback_modal_form_user_accept"> Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой&nbsp;конфиденциальности</a></label>
                       </fieldset>
-                    </div><a class="form__btn" href="#">Заказать</a>
+                    </div>
+                    <button class="form__btn" type="submit">Заказать</button>
                   </form>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay">
+      <div class="modal" id="article-modal">
+        <div class="modal__header">
+          <button class="modal__close callback-modal__close" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal__content">
+          <div class="container">
+            <h2 class="lw-text-md">Заголовок</h2>
+            <div class="modal__content-text">
+              <p class="lw-text sm lw-fw-light">
+                Далее рыба текст Модульный дом BIT26 состоит из двух модулей
+                размерами <span>6100 х 2500 мм.</span> В собранном виде чистовая площадь дома без террасы составит <span>26 м2.</span> Площадь террасы — 11 м2, здесь легко поместится обеденный стол для пикника.
+              </p>
+              <p class="lw-text sm lw-fw-light">Pixelwood придерживается таких размеров модулей, чтобы соблюсти регламент о перевозке негабаритных грузов.  Ваш будущий дом можно без специальных разрешений перевозить по общественным дорогам.</p>
+              <p class="lw-text sm lw-fw-light">
+                Модульный дом не требует капитальной застройки. Это означает, что вам не нужно
+                получать разрешение на строительство. Вы можете устанавить его в удобном месте или там, где стройка запрещена или ограничена — например,
+                в прибрежной зоне или на арендованной земле.
+              </p>
+              <p class="lw-text sm lw-fw-light">В доме есть все необходимое для комфортной жизни: кухня, обеденная зона, прихожая, полноценный санузел с ванной.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay">
+      <div class="modal message-modal" id="thanks-modal">
+        <div class="modal__header">
+          <button class="modal__close" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal__content">
+          <div class="container">
+            <p class="lw-text-md">Спасибо ! Мы свяжемся с Вами в ближайшее время!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay">
+      <div class="modal message-modal" id="error-modal">
+        <div class="modal__header">
+          <button class="modal__close" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal__content">
+          <div class="container">
+            <p class="lw-text-md">К сожалению, что-то пошло не так... Попробуйте снова !</p>
           </div>
         </div>
       </div>

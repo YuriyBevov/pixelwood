@@ -1,0 +1,13 @@
+.message-modal {
+  max-height: 200px;
+  background-image: url('../assets/img/feedback-bg@1x.jpg');
+  background-size: cover;
+  background-position: center;
+
+  .modal__content {
+    color: var(--white-color);
+    display: flex;
+    align-items: flex-end;
+    padding: 25px;
+  }
+}

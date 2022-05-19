@@ -4,4 +4,4 @@ mixin char-card(data)
       h3.lw-text-md= data.title
       p.lw-text-sm.lw-fw-light= `Стоимость от: ${data.cost} ₽`
 
-    a(href="#").char-card__btn= data.buttonText
+    a(href="#" data-modal-anchor= data.modalAnchor ? data.modalAnchor : null).char-card__btn= data.buttonText
