@@ -1149,6 +1149,8 @@ button.swiper-pagination-bullet {
   --dark-color: #141024;
   --text-color: #101318;
   --gray-color: #3E3E3E;
+  --danger-color: #f10000;
+  --hover-black: #1C1A1A;
   --main-bg-color: var(--light-color);
   --main-border-color: rgba(62, 62, 62, 0.5);
   --main-scrollbar-width: 6px;
@@ -1410,12 +1412,12 @@ fieldset {
   clip: rect(0 0 0 0);
 }
 
-.hover-opacity, .main-footer__link, .main-footer__about span a, .main-footer__logo, .developer, .form__accept a, .main-header__link, .main-btn, .form__btn, .char-card__btn, .main-header__btn, .chars__offer-btn {
+.hover-opacity, .main-footer__link, .main-footer__about span a, .main-footer__logo, .developer, .form__accept a, .main-header__link--phone, .main-header__link--logo, .main-btn, .form__btn, .char-card__btn, .main-header__btn, .chars__offer-btn {
   -webkit-transition: opacity var(--main-transition);
   -o-transition: opacity var(--main-transition);
   transition: opacity var(--main-transition);
 }
-.hover-opacity:hover, .main-footer__link:hover, .main-footer__about span a:hover, .main-footer__logo:hover, .developer:hover, .form__accept a:hover, .main-header__link:hover, .main-btn:hover, .form__btn:hover, .char-card__btn:hover, .main-header__btn:hover, .chars__offer-btn:hover, .hover-opacity:focus, .main-footer__link:focus, .main-footer__about span a:focus, .main-footer__logo:focus, .developer:focus, .form__accept a:focus, .main-header__link:focus, .main-btn:focus, .form__btn:focus, .char-card__btn:focus, .main-header__btn:focus, .chars__offer-btn:focus {
+.hover-opacity:hover, .main-footer__link:hover, .main-footer__about span a:hover, .main-footer__logo:hover, .developer:hover, .form__accept a:hover, .main-header__link--phone:hover, .main-header__link--logo:hover, .main-btn:hover, .form__btn:hover, .char-card__btn:hover, .main-header__btn:hover, .chars__offer-btn:hover, .hover-opacity:focus, .main-footer__link:focus, .main-footer__about span a:focus, .main-footer__logo:focus, .developer:focus, .form__accept a:focus, .main-header__link--phone:focus, .main-header__link--logo:focus, .main-btn:focus, .form__btn:focus, .char-card__btn:focus, .main-header__btn:focus, .chars__offer-btn:focus {
   opacity: 0.7;
 }
 
@@ -1436,6 +1438,26 @@ fieldset {
     min-height: 40px;
     padding: 10px;
   }
+}
+
+.background-color-hover, .main-header__btn, .chars__offer-btn {
+  -webkit-transition: background-color var(--main-transition);
+  -o-transition: background-color var(--main-transition);
+  transition: background-color var(--main-transition);
+}
+.background-color-hover:hover, .main-header__btn:hover, .chars__offer-btn:hover, .background-color-hover:focus, .main-header__btn:focus, .chars__offer-btn:focus {
+  opacity: 1;
+  background-color: var(--hover-black);
+}
+
+.border-width-hover, .form__btn, .char-card__btn {
+  -webkit-transition: all var(--main-transition);
+  -o-transition: all var(--main-transition);
+  transition: all var(--main-transition);
+}
+.border-width-hover:hover, .form__btn:hover, .char-card__btn:hover, .border-width-hover:focus, .form__btn:focus, .char-card__btn:focus {
+  opacity: 1;
+  border-width: 3px;
 }
 
 /*
@@ -2087,12 +2109,18 @@ fieldset {
 }
 .main-header__link--social svg {
   fill: var(--gray-color);
+  -webkit-transition: fill var(--main-transition);
+  -o-transition: fill var(--main-transition);
+  transition: fill var(--main-transition);
+}
+.main-header__link--social:hover svg, .main-header__link--social:focus svg {
+  fill: var(--hover-black);
 }
 .main-header__link--phone {
-  color: var(--gray-color);
   font-size: 20px;
   font-weight: 700;
   margin-right: 0;
+  color: var(--gray-color);
 }
 @media (max-width: 600px) {
   .main-header__link--phone {

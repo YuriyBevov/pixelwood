@@ -17,24 +17,34 @@
 
   &__link {
     @extend .flex-centered-content;
-    @extend .hover-opacity;
     margin-right: 8px;
 
     &--logo {
       margin-right: auto;
+      @extend .hover-opacity;
     }
 
     &--social {
+
       svg {
         fill: var(--gray-color);
+        transition: fill var(--main-transition);
+      }
+
+      &:hover,
+      &:focus {
+        svg {
+          fill: var(--hover-black);
+        }
       }
     }
 
     &--phone {
-      color: var(--gray-color);
+      @extend .hover-opacity;
       font-size: 20px;
       font-weight: 700;
       margin-right: 0;
+      color: var(--gray-color);
 
       @include m-b-down('600px') {
         font-size: 16px;
@@ -65,8 +75,10 @@
 
   &__btn {
     @extend .main-btn;
+    @extend .background-color-hover;
     min-width: 190px;
     margin-right: 8px;
+
 
     @include m-b-down('600px') {
       margin-right: 0;

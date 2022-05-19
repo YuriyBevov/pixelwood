@@ -161,6 +161,26 @@
   }
 }
 
+.background-color-hover {
+  transition: background-color var(--main-transition);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    background-color: var(--hover-black);
+  }
+}
+
+.border-width-hover {
+  transition: all var(--main-transition);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    border-width: 3px;
+  }
+}
+
 /*
 убрать в миксин !!!
 .main-checkbox {

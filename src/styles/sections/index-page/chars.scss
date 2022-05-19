@@ -66,6 +66,7 @@
 
   &__offer-btn {
     @extend .main-btn;
+    @extend .background-color-hover;
     max-width: 100%;
     margin-bottom: 40px;
 
