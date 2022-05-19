@@ -1,10 +1,10 @@
 header.main-header
   .container
     .main-header__wrapper
-      a(href="index.html").main-header__link.main-header__link--logo
+      a(href="index.html" aria-label="Обновить").main-header__link.main-header__link--logo
         img(src="./assets/img/main-logo.svg" alt="PixelWood" width="120" height="51")
 
-      a(href="#").main-header__link.main-header__link--social
+      a(href="#" aria-label="Telegram" rel="noopener noreferrer nofollow" target="_blank").main-header__link.main-header__link--social
         svg(width="55" height="55")
           use(xlink:href="./assets/svg-sprite.svg#icon-tg")
       a(href="#" data-modal-anchor="callback-modal").main-header__btn Заказать звонок

@@ -21,7 +21,6 @@ section.advantages
       each adv in advantages
         li.advantages__item
           picture
-            source(srcset=`./assets/img/${adv.icon}-tablet.png` media="(max-width: 1024px)" width=adv.iconTabletWidth height="64")
+            source(media="(max-width: 1024px)" srcset=`./assets/img/${adv.icon}-tablet.png` width=adv.iconTabletWidth height="64")
             img(src=`./assets/img/${adv.icon}.png` alt=adv.alt width=adv.iconWidth height="71")
           p.advantages__text= adv.text
-
