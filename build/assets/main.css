@@ -2076,6 +2076,7 @@ button {
   left: 0;
   z-index: 10;
   background-color: var(--white-color);
+  outline: 1px solid red;
 }
 .main-header.js-sticky {
   -webkit-box-shadow: 0 4px 2px -2px var(--box-shadow-color);
