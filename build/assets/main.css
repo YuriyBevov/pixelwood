@@ -1560,7 +1560,7 @@ button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 90vw;
+  max-width: 600px;
   height: 90vh;
   max-height: 424px;
   background-color: #ffffff;
@@ -1613,6 +1613,18 @@ button {
 #callback-modal .feedback {
   height: 100%;
   padding: 50px 0;
+}
+#callback-modal .feedback form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 #callback-modal .form__accept {
   margin-bottom: 20px;
