@@ -1,5 +1,5 @@
 -
-  const slides = [
+  const interiorSlides = [
     {img: 'interior-slide-1'},
     {img: 'interior-slide-2'},
     {img: 'interior-slide-3'},
@@ -18,24 +18,56 @@
     {img: 'interior-slide-16'},
     {img: 'interior-slide-17'},
   ]
-section.interior
+
+-
+  const exteriorSlides = [
+    {img: 'exterior-slide-1'},
+    {img: 'exterior-slide-2'},
+  ]
+
+section.visual
   .container
-    h2.lw-text-xxl.lw-text-center Интерьер
+    h2.lw-text-xxl.lw-text-center Визуализация
 
-    .swiper.interior-swiper
-      .swiper-wrapper
-        each slide in slides
-          .swiper-slide
-            picture
-              // 1720/700
-              source(type="image/webp" srcset=`./assets/img/${slide.img}@1x.webp 1x, ./assets/img/${slide.img}@2x.webp 2x`)
-              img(src=`./assets/img/${slide.img}@1x.jpg` srcset=`./assets/img/${slide.img}@2x.jpg 2x` alt="Фото интерьера" width="1720" height="700")
+    .visual__button-group
+      button(type: "button" data-type="interior").visual__switcher.active Интерьер
+      button(type: "button" data-type="exterior").visual__switcher Экстерьер
 
-      .swiper-pagination
+    .slider__wrapper
+      .visual__slider-box(data-type="interior").active
+        .swiper.main-swiper
+          .swiper-wrapper
+            each slide in interiorSlides
+              .swiper-slide
+                picture
+                  // 1720/700
+                  source(type: "image/webp" srcset=`./assets/img/${slide.img}@1x.webp 1x, ./assets/img/${slide.img}@2x.webp 2x`)
+                  img(src=`./assets/img/${slide.img}@1x.jpg` srcset=`./assets/img/${slide.img}@2x.jpg 2x` alt="Фото интерьера" width="1720" height="700")
 
-      .swiper-button-prev
-        svg(width="47" height="15")
-          use(xlink:href="./assets/svg-sprite.svg#icon-arrow-left")
-      .swiper-button-next
-        svg(width="47" height="15")
-          use(xlink:href="./assets/svg-sprite.svg#icon-arrow-right")
+          .swiper-pagination
+
+          .swiper-button-prev
+            svg(width="47" height="15")
+              use(xlink:href="./assets/svg-sprite.svg#icon-arrow-left")
+          .swiper-button-next
+            svg(width="47" height="15")
+              use(xlink:href="./assets/svg-sprite.svg#icon-arrow-right")
+
+      .visual__slider-box(data-type="exterior")
+        .swiper.main-swiper
+          .swiper-wrapper
+            each slide in exteriorSlides
+              .swiper-slide
+                picture
+                  // 1720/700
+                  source(type: "image/webp" srcset=`./assets/img/${slide.img}@1x.webp 1x, ./assets/img/${slide.img}@2x.webp 2x`)
+                  img(src=`./assets/img/${slide.img}@1x.jpg` srcset=`./assets/img/${slide.img}@2x.jpg 2x` alt="Фото интерьера" width="1720" height="700")
+
+          .swiper-pagination
+
+          .swiper-button-prev
+            svg(width="47" height="15")
+              use(xlink:href="./assets/svg-sprite.svg#icon-arrow-left")
+          .swiper-button-next
+            svg(width="47" height="15")
+              use(xlink:href="./assets/svg-sprite.svg#icon-arrow-right")

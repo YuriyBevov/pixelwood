@@ -1,0 +1,66 @@
+.visual {
+  @extend .section-padding;
+  margin-bottom: 60px;
+
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  &__button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__switcher {
+    @extend .main-btn;
+    min-width: 190px;
+
+    color: var(--gray-color);
+    background-color: var(--lightgray-color);
+    transition: color var(--main-transition);
+
+    &:first-child {
+      margin-right: 3px;
+    }
+
+    @include m-b-down('600px') {
+      min-width: 143px;
+    }
+
+    &.active {
+      @extend .background-color-hover;
+      color: var(--white-color);
+      background-color: var(--gray-color);
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      color: var(--white-color);
+    }
+  }
+
+  &__slider-wrapper {
+    position: relative;
+  }
+
+  &__slider-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    &.active {
+      position: relative;
+      z-index: 0;
+      opacity: 1;
+    }
+  }
+}

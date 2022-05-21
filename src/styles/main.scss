@@ -14,12 +14,7 @@
 @import "./sections/index-page/features";
 @import "./sections/index-page/feedback";
 @import "./sections/index-page/chars";
-@import "./sections/index-page/interior";
-
-//@import "./sections/index-page/questions";
-
-@import "./sections/index-page/chars";
-@import "./sections/index-page/interior";
+@import "./sections/index-page/visual";
 
 /* Компоненты */
 @import "./components/main-header";
@@ -27,6 +22,7 @@
 @import "./components/chars-accordeon";
 @import "./components/char-card";
 @import "./components/form";
+@import "./components/main-swiper";
 @import "./components/developer";
 
 @import "./components/main-footer";
