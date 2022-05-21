@@ -1227,6 +1227,7 @@ body {
   line-height: 1.2;
   color: var(--text-color);
   background-color: var(--main-bg-color);
+  overflow-x: hidden !important;
 }
 body.body-locked {
   overflow: hidden;
@@ -2200,6 +2201,9 @@ button {
   display: block;
 }
 
+#chars-accordeon {
+  margin-bottom: 25px;
+}
 #chars-accordeon .accordeon-field {
   border-bottom: 1px solid var(--main-border-color);
 }
