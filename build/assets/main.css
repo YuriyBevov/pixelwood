@@ -1547,7 +1547,7 @@ button {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  z-index: 20;
+  z-index: 99;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-overlay.is-opened {
@@ -1558,7 +1558,9 @@ button {
 
 .modal {
   position: relative;
-  width: 90vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   max-width: 600px;
   height: 90vh;
   max-height: 424px;
@@ -2074,10 +2076,8 @@ button {
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 10;
   background-color: var(--white-color);
-  outline: 1px solid red;
 }
 .main-header.js-sticky {
   -webkit-box-shadow: 0 4px 2px -2px var(--box-shadow-color);
