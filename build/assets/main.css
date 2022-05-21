@@ -1227,7 +1227,6 @@ body {
   line-height: 1.2;
   color: var(--text-color);
   background-color: var(--main-bg-color);
-  overflow-x: hidden !important;
 }
 body.body-locked {
   overflow: hidden;
