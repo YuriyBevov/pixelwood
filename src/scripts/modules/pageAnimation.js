@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: 0.5,
         delay: 0.1,
         opacity: 1,
-        x: 0,
+        y: 0,
       })
 
       gsap.to(text, {
@@ -77,19 +77,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if(featuresImg) {
       featuresImg.forEach((img, i) => {
 
-        if(i % 2 === 0) {
-          img.style.transform = 'translateX(150px)';
-        } else {
-          img.style.transform = 'translateX(-150px)';
+        if(i !== 2) {
+          img.style.transform = 'translateY(150px)';
+          img.style.opacity = '0';
         }
-
-        img.style.opacity = '0';
 
         gsap.to(img, {
           scrollTrigger: img,
-          delay: 0.4 * (i+1),
           duration: 0.5,
-          x: 0,
+          delay: 0.3 * (i+1),
+          y: 0,
           opacity: 1,
           ease: 'ease-in'
         });
@@ -102,11 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(charCard) {
       charCard.forEach((card, i) => {
 
-        if(i % 2 === 0) {
-          card.style.transform = 'translateX(150px)';
-        } else {
-          card.style.transform = 'translateX(-150px)';
-        }
+        card.style.transform = 'translateY(100px)';
 
         card.style.opacity = '0';
 
@@ -114,26 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
           scrollTrigger: card,
           delay: 0.2 * (i+1),
           duration: 0.5,
-          x: 0,
+          y: 0,
           opacity: 1,
           ease: 'ease-in'
         });
 
-      });
-    }
-
-    const question = document.querySelector('.main-footer .feedback h2');
-    question.style.opacity = '0';
-    question.style.transform = 'translateY(150px)';
-
-    if(question) {
-      gsap.to(question, {
-        scrollTrigger: question,
-        duration: 0.5,
-        delay: 0.4,
-        y: 0,
-        opacity: 1,
-        ease: 'ease-in'
       });
     }
 });

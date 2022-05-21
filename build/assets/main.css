@@ -1225,10 +1225,8 @@ body {
   font-family: var(--font-family, sans-serif);
   font-weight: 400;
   line-height: 1.2;
-  width: 100vw;
   color: var(--text-color);
   background-color: var(--main-bg-color);
-  overflow-x: hidden !important;
 }
 body.body-locked {
   overflow: hidden;
@@ -1737,14 +1735,14 @@ button {
   opacity: 0;
 }
 .intro h2 {
-  -webkit-transform: translateX(100px);
-  -ms-transform: translateX(100px);
-  transform: translateX(100px);
+  -webkit-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  transform: translateY(70px);
 }
 .intro p {
-  -webkit-transform: translateY(100px);
-  -ms-transform: translateY(100px);
-  transform: translateY(100px);
+  -webkit-transform: translateY(120px);
+  -ms-transform: translateY(120px);
+  transform: translateY(120px);
 }
 .intro .gsap-animate-container {
   position: relative;
@@ -1762,6 +1760,7 @@ button {
   height: 100%;
   background-color: var(--white-color);
   z-index: 3;
+  overflow: hidden;
 }
 .intro .gsap-animate-overlay .top,
 .intro .gsap-animate-overlay .middle,

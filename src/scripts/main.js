@@ -1,4 +1,4 @@
-//import './modules/pageAnimation.js';
+import './modules/pageAnimation.js';
 import './modules/stickyHeader.js';
 import './modules/iMask.js';
 import './modules/accordeon.js';

@@ -46,11 +46,11 @@
   }
 
   h2 {
-    transform: translateX(100px);
+    transform: translateY(70px);
   }
 
   p {
-    transform: translateY(100px);
+    transform: translateY(120px);
   }
 
   .gsap-animate-container {
@@ -67,6 +67,7 @@
     height: 100%;
     background-color: var(--white-color);
     z-index: 3;
+    overflow: hidden;
 
     .top,
     .middle,
