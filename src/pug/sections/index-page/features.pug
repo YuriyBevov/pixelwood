@@ -19,9 +19,33 @@ section.features
         p.lw-text-md.lw-fw-light.features-text
           | В доме есть все необходимое для комфортной жизни: кухня, обеденная зона, прихожая, полноценный санузел с ванной.
 
-      picture.features__section-img
-        source(type="image/webp" srcset="./assets/img/layout@1x.webp 1x, ./assets/img/layout@2x.webp 2x")
-        img(src="./assets/img/layout@1x.png" srcset="./assets/img/layout@2x.png 2x" alt="Планировка" width="880" height="636")
+      .features__slider-container.features__section-img
+        .swiper.features-swiper
+          .swiper-wrapper
+            .swiper-slide
+              h3.lw-text-lg.features-swiper-title Композиция из 2х модулей
+              picture
+                source(type="image/webp" srcset="./assets/img/layout@1x.webp 1x, ./assets/img/layout@2x.webp 2x")
+                img(src="./assets/img/layout@1x.png" srcset="./assets/img/layout@2x.png 2x" alt="Планировка" width="880" height="636")
+
+            .swiper-slide
+              h3.lw-text-lg.features-swiper-title Композиция из 3х модулей
+              picture
+                source(type="image/webp" srcset="./assets/img/layout@1x.webp 1x, ./assets/img/layout@2x.webp 2x")
+                img(src="./assets/img/layout@1x.png" srcset="./assets/img/layout@2x.png 2x" alt="Планировка" width="880" height="636")
+
+            .swiper-slide
+              h3.lw-text-lg.features-swiper-title Композиция из 4х модулей
+              picture
+                source(type="image/webp" srcset="./assets/img/layout@1x.webp 1x, ./assets/img/layout@2x.webp 2x")
+                img(src="./assets/img/layout@1x.png" srcset="./assets/img/layout@2x.png 2x" alt="Планировка" width="880" height="636")
+
+          .swiper-button-prev
+            svg(width="47" height="15")
+              use(xlink:href="./assets/svg-sprite.svg#icon-arrow-left")
+          .swiper-button-next
+            svg(width="47" height="15")
+              use(xlink:href="./assets/svg-sprite.svg#icon-arrow-right")
 
     .features__section
       picture.features__section-img

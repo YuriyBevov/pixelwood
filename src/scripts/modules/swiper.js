@@ -44,4 +44,20 @@ switchers.forEach(switcher => {
   });
 });
 
+const featuresSwiper = document.querySelectorAll('.features-swiper');
+
+if( featuresSwiper ) {
+  featuresSwiper.forEach(slider => {
+    new Swiper(slider, {
+      modules: [Navigation, Pagination],
+      slidesPerView: 1,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    })
+  })
+};
+
 

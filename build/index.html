@@ -111,9 +111,40 @@
               </p>
               <p class="lw-text-md lw-fw-light features-text">В доме есть все необходимое для комфортной жизни: кухня, обеденная зона, прихожая, полноценный санузел с ванной.</p>
             </div>
-            <picture class="features__section-img">
-              <source type="image/webp" srcset="./assets/img/layout@1x.webp 1x, ./assets/img/layout@2x.webp 2x"><img src="./assets/img/layout@1x.png" srcset="./assets/img/layout@2x.png 2x" alt="Планировка" width="880" height="636">
-            </picture>
+            <div class="features__slider-container features__section-img">
+              <div class="swiper features-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <h3 class="lw-text-lg features-swiper-title">Композиция из 2х модулей</h3>
+                    <picture>
+                      <source type="image/webp" srcset="./assets/img/layout@1x.webp 1x, ./assets/img/layout@2x.webp 2x"><img src="./assets/img/layout@1x.png" srcset="./assets/img/layout@2x.png 2x" alt="Планировка" width="880" height="636">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3 class="lw-text-lg features-swiper-title">Композиция из 3х модулей</h3>
+                    <picture>
+                      <source type="image/webp" srcset="./assets/img/layout@1x.webp 1x, ./assets/img/layout@2x.webp 2x"><img src="./assets/img/layout@1x.png" srcset="./assets/img/layout@2x.png 2x" alt="Планировка" width="880" height="636">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3 class="lw-text-lg features-swiper-title">Композиция из 4х модулей</h3>
+                    <picture>
+                      <source type="image/webp" srcset="./assets/img/layout@1x.webp 1x, ./assets/img/layout@2x.webp 2x"><img src="./assets/img/layout@1x.png" srcset="./assets/img/layout@2x.png 2x" alt="Планировка" width="880" height="636">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-button-prev">
+                  <svg width="47" height="15">
+                    <use xlink:href="./assets/svg-sprite.svg#icon-arrow-left"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg width="47" height="15">
+                    <use xlink:href="./assets/svg-sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="features__section">
             <picture class="features__section-img">
@@ -160,164 +191,6 @@
             <picture class="features__section-img">
               <source type="image/webp" srcset="./assets/img/production@1x.webp 1x, ./assets/img/production@2x.webp 2x"><img src="./assets/img/production@1x.png" srcset="./assets/img/production@2x.png 2x" alt="Производство" width="651" height="779">
             </picture>
-          </div>
-        </div>
-      </section>
-      <section class="feedback">
-        <div class="container">
-          <h2 class="lw-text-xxl">Остались вопросы?</h2><span class="lw-text-md">Заказать звонок</span>
-                <form class="form" action="mail.php" method="POST">
-                  <div class="form__content">
-                    <fieldset class="form__data">
-                      <input type="text" placeholder="Как к вам обращаться" id="feedback_form_user_name">
-                      <input type="tel" placeholder="Номер телефона" id="feedback_form_user_phone">
-                    </fieldset>
-                    <fieldset class="form__accept">
-                      <input type="checkbox" id="feedback_form_user_accept">
-                      <label class="checkbox-label" for="feedback_form_user_accept"> Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой&nbsp;конфиденциальности</a></label>
-                    </fieldset>
-                  </div>
-                  <button class="form__btn" type="submit">Заказать</button>
-                </form>
-        </div>
-      </section>
-      <section class="chars">
-        <div class="container">
-          <div class="chars__wrapper sticky-container">
-            <picture class="chars__img">
-              <source srcset="./assets/img/layout@1x.webp 1x, ./assets/img/layout@2x.webp 2x" type="image/webp"><img src="./assets/img/layout@1x.png" srcset="./assets/img/layout@2x.png 2x" alt="Планировка" width="880" height="636">
-            </picture>
-            <div class="chars__content">
-              <h2 class="lw-text-xxl">Модульный дом BIT26</h2>
-              <ul class="chars__list">
-                <li class="chars__item"><span class="lw-text-sm">Стоимость:</span><span class="lw-text-sm">3 500 000 ₽</span></li>
-                <li class="chars__item"><span class="lw-text-sm">Общая площадь</span><span class="lw-text-sm">35 м2</span></li>
-                <li class="chars__item"><span class="lw-text-sm">Жилая площадь</span><span class="lw-text-sm">35 м2</span></li>
-                <li class="chars__item"><span class="lw-text-sm">Любой пункт</span><span class="lw-text-sm">Любое значение</span></li>
-              </ul><a class="chars__offer-btn" href="#" data-modal-anchor="callback-modal">Заказать звонок</a>
-              <div class="chars__accordeon">
-                <h3 class="chars__accordeon-title lw-text-xl">Используемые материалы или комплектация дома</h3>
-                <div class="accordeon" id="chars-accordeon">
-                  <div class="accordeon-field">
-                    <div class="accordeon-head js-active"><span class="lw-text-lg">Отделка</span>
-                      <svg width="16" height="16">
-                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
-                      </svg>
-                    </div>
-                    <div class="accordeon-body js-opened">
-                      <p class="lw-text-sm lw-fw-light">Гидро-ветрозащитная мембрана.</p>
-                      <p class="lw-text-sm lw-fw-light">Рулонная полимербитумная изоляция с базальтовой крошкой</p><img src="./assets/img/accordeon-mock-img@1x.png" alt="Отделка" width="561" height="92">
-                    </div>
-                  </div>
-                  <div class="accordeon-field">
-                    <div class="accordeon-head"><span class="lw-text-lg">Утеплитель</span>
-                      <svg width="16" height="16">
-                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
-                      </svg>
-                    </div>
-                    <div class="accordeon-body">
-                      <p class="lw-text-sm lw-fw-light">Гидро-ветрозащитная мембрана.</p>
-                      <p class="lw-text-sm lw-fw-light">Рулонная полимербитумная изоляция с базальтовой крошкой</p><img src="./assets/img/accordeon-mock-img@1x.png" alt="Утеплитель" width="561" height="92">
-                    </div>
-                  </div>
-                  <div class="accordeon-field">
-                    <div class="accordeon-head"><span class="lw-text-lg">Кровля</span>
-                      <svg width="16" height="16">
-                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
-                      </svg>
-                    </div>
-                    <div class="accordeon-body">
-                      <p class="lw-text-sm lw-fw-light">Гидро-ветрозащитная мембрана.</p>
-                      <p class="lw-text-sm lw-fw-light">Рулонная полимербитумная изоляция с базальтовой крошкой</p><img src="./assets/img/accordeon-mock-img@1x.png" alt="Кровля" width="561" height="92">
-                    </div>
-                  </div>
-                  <div class="accordeon-field">
-                    <div class="accordeon-head"><span class="lw-text-lg">Электрика:</span>
-                      <svg width="16" height="16">
-                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
-                      </svg>
-                    </div>
-                    <div class="accordeon-body">
-                      <p class="lw-text-sm lw-fw-light">Гидро-ветрозащитная мембрана.</p>
-                      <p class="lw-text-sm lw-fw-light">Рулонная полимербитумная изоляция с базальтовой крошкой</p><img src="./assets/img/accordeon-mock-img@1x.png" alt="Электрика:" width="561" height="92">
-                    </div>
-                  </div>
-                  <div class="accordeon-field">
-                    <div class="accordeon-head"><span class="lw-text-lg">Сан.узел</span>
-                      <svg width="16" height="16">
-                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
-                      </svg>
-                    </div>
-                    <div class="accordeon-body">
-                      <p class="lw-text-sm lw-fw-light">Гидро-ветрозащитная мембрана.</p>
-                      <p class="lw-text-sm lw-fw-light">Рулонная полимербитумная изоляция с базальтовой крошкой</p><img src="./assets/img/accordeon-mock-img@1x.png" alt="Сан.узел" width="561" height="92">
-                    </div>
-                  </div>
-                  <div class="accordeon-field">
-                    <div class="accordeon-head"><span class="lw-text-lg">Отопление и вентиляция</span>
-                      <svg width="16" height="16">
-                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
-                      </svg>
-                    </div>
-                    <div class="accordeon-body">
-                      <p class="lw-text-sm lw-fw-light">Гидро-ветрозащитная мембрана.</p>
-                      <p class="lw-text-sm lw-fw-light">Рулонная полимербитумная изоляция с базальтовой крошкой</p><img src="./assets/img/accordeon-mock-img@1x.png" alt="Отопление и вентиляция" width="561" height="92">
-                    </div>
-                  </div>
-                  <div class="accordeon-field">
-                    <div class="accordeon-head"><span class="lw-text-lg">Внешняя отделка</span>
-                      <svg width="16" height="16">
-                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
-                      </svg>
-                    </div>
-                    <div class="accordeon-body">
-                      <p class="lw-text-sm lw-fw-light">Гидро-ветрозащитная мембрана.</p>
-                      <p class="lw-text-sm lw-fw-light">Рулонная полимербитумная изоляция с базальтовой крошкой</p><img src="./assets/img/accordeon-mock-img@1x.png" alt="Внешняя отделка" width="561" height="92">
-                    </div>
-                  </div>
-                  <div class="accordeon-field">
-                    <div class="accordeon-head"><span class="lw-text-lg">Терраса</span>
-                      <svg width="16" height="16">
-                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
-                      </svg>
-                    </div>
-                    <div class="accordeon-body">
-                      <p class="lw-text-sm lw-fw-light">Гидро-ветрозащитная мембрана.</p>
-                      <p class="lw-text-sm lw-fw-light">Рулонная полимербитумная изоляция с базальтовой крошкой</p><img src="./assets/img/accordeon-mock-img@1x.png" alt="Терраса" width="561" height="92">
-                    </div>
-                  </div>
-                  <div class="accordeon-field">
-                    <div class="accordeon-head"><span class="lw-text-lg">Фундамент</span>
-                      <svg width="16" height="16">
-                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
-                      </svg>
-                    </div>
-                    <div class="accordeon-body">
-                      <p class="lw-text-sm lw-fw-light">Гидро-ветрозащитная мембрана.</p>
-                      <p class="lw-text-sm lw-fw-light">Рулонная полимербитумная изоляция с базальтовой крошкой</p><img src="./assets/img/accordeon-mock-img@1x.png" alt="Фундамент" width="561" height="92">
-                    </div>
-                  </div>
-                </div>
-              </div>
-                    <div class="char-card">
-                      <div class="char-card__content">
-                        <h3 class="lw-text-md">Если вы точно знаете, как должен выглядеть ваш дом, мы знаем, как его построить!</h3>
-                        <p class="lw-text-sm lw-fw-light">Стоимость от: 3 500 000 ₽</p>
-                      </div><a class="char-card__btn" href="#">Расчитать стоимость</a>
-                    </div>
-                    <div class="char-card">
-                      <div class="char-card__content">
-                        <h3 class="lw-text-md">Заголовок, про расширение терассы</h3>
-                        <p class="lw-text-sm lw-fw-light">Стоимость от: 3 500 000 ₽</p>
-                      </div><a class="char-card__btn" href="#" data-modal-anchor="article-modal">Подробнее</a>
-                    </div>
-                    <div class="char-card">
-                      <div class="char-card__content">
-                        <h3 class="lw-text-md">Заголовок, про канализацию, воду и прочее</h3>
-                        <p class="lw-text-sm lw-fw-light">Стоимость от: 3 500 000 ₽</p>
-                      </div><a class="char-card__btn" href="#" data-modal-anchor="article-modal">Подробнее</a>
-                    </div>
-            </div>
           </div>
         </div>
       </section>
@@ -476,6 +349,242 @@
                   </svg>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container">
+          <h2 class="lw-text-xxl">Остались вопросы?</h2><span class="lw-text-md">Заказать звонок</span>
+                <form class="form" action="mail.php" method="POST">
+                  <div class="form__content">
+                    <fieldset class="form__data">
+                      <input type="text" placeholder="Как к вам обращаться" id="feedback_form_user_name">
+                      <input type="tel" placeholder="Номер телефона" id="feedback_form_user_phone">
+                    </fieldset>
+                    <fieldset class="form__accept">
+                      <input type="checkbox" id="feedback_form_user_accept">
+                      <label class="checkbox-label" for="feedback_form_user_accept"> Я даю согласие на обработку персональных данных в соответствии с <a href="#">политикой&nbsp;конфиденциальности</a></label>
+                    </fieldset>
+                  </div>
+                  <button class="form__btn" type="submit">Заказать</button>
+                </form>
+        </div>
+      </section>
+      <section class="chars">
+        <div class="container">
+          <div class="chars__wrapper sticky-container">
+            <picture class="chars__img">
+              <source srcset="./assets/img/layout@1x.webp 1x, ./assets/img/layout@2x.webp 2x" type="image/webp"><img src="./assets/img/layout@1x.png" srcset="./assets/img/layout@2x.png 2x" alt="Планировка" width="880" height="636">
+            </picture>
+            <div class="chars__content">
+              <h2 class="lw-text-xxl">Модульный дом BIT26</h2>
+              <ul class="chars__list">
+                <li class="chars__item"><span class="lw-text-sm">Стоимость:</span><span class="lw-text-sm">3 500 000 ₽</span></li>
+                <li class="chars__item"><span class="lw-text-sm">Общая площадь</span><span class="lw-text-sm">35 м2</span></li>
+                <li class="chars__item"><span class="lw-text-sm">Жилая площадь</span><span class="lw-text-sm">35 м2</span></li>
+                <li class="chars__item"><span class="lw-text-sm">Любой пункт</span><span class="lw-text-sm">Любое значение</span></li>
+              </ul><a class="chars__offer-btn" href="#" data-modal-anchor="callback-modal">Заказать звонок</a>
+              <div class="chars__accordeon">
+                <h3 class="chars__accordeon-title lw-text-xl">Используемые материалы или комплектация дома</h3>
+                <div class="accordeon" id="chars-accordeon">
+                  <div class="accordeon-field">
+                    <div class="accordeon-head js-active"><span class="lw-text-lg">Каркас</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body js-opened">
+                      <p class="lw-text-sm lw-fw-light">LVL брус</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Остекление</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Панарамное остекление </p>
+                      <p class="lw-text-sm lw-fw-light">Кухонное окно</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Утепление</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Минеральная вата</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Кровля</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Наплавляемая полимер битумная</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Внешняя отделка</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Планкен из лиственницы</p>
+                      <p class="lw-text-sm lw-fw-light">Планкен из сосны</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Терасса</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Лиственница вельвет</p>
+                      <p class="lw-text-sm lw-fw-light">Палубная доска из сосны</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Внутренняя отделка</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Шлифованная березовая фанера скрытый крепеж</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Электрика</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Разводка</p>
+                      <p class="lw-text-sm lw-fw-light">Электрический щиток</p>
+                      <p class="lw-text-sm lw-fw-light">Розетки и выключатели </p>
+                      <p class="lw-text-sm lw-fw-light">Осветительные приборы</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Отопление</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Внутрипольные конвекторы</p>
+                      <p class="lw-text-sm lw-fw-light">Батарея электрическая</p>
+                      <p class="lw-text-sm lw-fw-light">Электрический пол с подогревом</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Вентиляция</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Приточный клапан</p>
+                      <p class="lw-text-sm lw-fw-light">Рекуператор</p>
+                      <p class="lw-text-sm lw-fw-light">Кондиционер</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Двери</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Дверь металлическая</p>
+                      <p class="lw-text-sm lw-fw-light">Дверь с терморазрывом</p>
+                      <p class="lw-text-sm lw-fw-light">Дверь в санузел</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Санузел</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Разводка санузла и кухни</p>
+                      <p class="lw-text-sm lw-fw-light">Отопительный электрический котел 80 л</p>
+                      <p class="lw-text-sm lw-fw-light">Инсталяция для унитаза</p>
+                      <p class="lw-text-sm lw-fw-light">Унитаз напольный</p>
+                      <p class="lw-text-sm lw-fw-light">Душевая</p>
+                      <p class="lw-text-sm lw-fw-light">Раковина</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Кухня и мебель</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Кухонный гарнитур</p>
+                      <p class="lw-text-sm lw-fw-light">Барная стойка</p>
+                      <p class="lw-text-sm lw-fw-light">Стулья</p>
+                      <p class="lw-text-sm lw-fw-light">Кровать</p>
+                      <p class="lw-text-sm lw-fw-light">Тумбы</p>
+                      <p class="lw-text-sm lw-fw-light">Диван</p>
+                      <p class="lw-text-sm lw-fw-light">*Индивидуальный расчет</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Фундамент</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">Проект разбивки свайного фундамента</p>
+                      <p class="lw-text-sm lw-fw-light">Монтаж свайного фундамента</p>
+                    </div>
+                  </div>
+                  <div class="accordeon-field">
+                    <div class="accordeon-head"><span class="lw-text-lg">Доставка</span>
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/svg-sprite.svg#icon-plus"></use>
+                      </svg>
+                    </div>
+                    <div class="accordeon-body">
+                      <p class="lw-text-sm lw-fw-light">*Расчитывается отдельно по км</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                    <div class="char-card">
+                      <div class="char-card__content">
+                        <h3 class="lw-text-md">Если вы точно знаете, как должен выглядеть ваш дом, мы знаем, как его построить!</h3>
+                        <p class="lw-text-sm lw-fw-light">Стоимость от: 3 500 000 ₽</p>
+                      </div><a class="char-card__btn" href="#">Расчитать стоимость</a>
+                    </div>
+              <!--+char-card({
+                title: 'Заголовок, про расширение терассы',
+                cost: '3 500 000',
+                buttonText: 'Подробнее',
+                modalAnchor: 'article-modal',
+              })
+              
+              -->
+              <!--+char-card({
+                title: 'Заголовок, про канализацию, воду и прочее',
+                cost: '3 500 000',
+                buttonText: 'Подробнее',
+                modalAnchor: 'article-modal',
+              })
+              -->
             </div>
           </div>
         </div>

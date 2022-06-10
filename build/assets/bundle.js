@@ -413,6 +413,22 @@ switchers.forEach(function (switcher) {
     });
   });
 });
+var featuresSwiper = document.querySelectorAll('.features-swiper');
+
+if (featuresSwiper) {
+  featuresSwiper.forEach(function (slider) {
+    new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
+      modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+  });
+}
+
+;
 
 /***/ }),
 
